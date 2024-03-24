@@ -53,7 +53,8 @@ logger.addHandler(fh)
 logger.setLevel(logging.INFO)
 
 cpu = th.device('cpu')
-gpu = th.device('cuda:0')
+gpu = th.device('mps:0')
+# gpu = th.device('cuda:0')
 
 logger.info('arguments:')
 logger.info(str(args))
